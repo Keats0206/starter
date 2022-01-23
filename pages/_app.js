@@ -1,7 +1,11 @@
-import '../styles/globals.css'
+import "../styles/globals.css"; // Global styles
+import GlobalProvider from "../containers/index";
 
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+export default function MyApp({ Component, pageProps }) {
+  return (
+    // Wrap page in global state provider
+    <GlobalProvider>
+      <Component {...pageProps} />;
+    </GlobalProvider>
+  );
 }
-
-export default MyApp
