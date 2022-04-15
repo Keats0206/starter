@@ -1,15 +1,15 @@
 import Head from "next/head"; // HTML Head
 import Navigation from "../components/Navigation";
 
-export default function Layout({ children }, isProfile) {
+export default function Layout({ children }, showCheckout) {
   return (
     <div>
       {/* Meta */}
       {/* <Meta isProfile={isProfile} /> */}
       {/* Header */}
-       <Navigation />
+       <Navigation showCheckout={showCheckout}/>
       {/* Content container */}
-      <div class="px-10 py-20 flex justify-center">{children}</div>
+      <div class="flex items-center justify-center">{children}</div>
     </div>
   );
 }

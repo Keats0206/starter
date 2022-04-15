@@ -8,8 +8,10 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@supabase/supabase-js": "^1.33.3",
     "@walletconnect/web3-provider": "^1.7.1",
-    "axios": "^0.25.0",
+    "airtable": "^0.11.3",
+    "axios": "^0.26.1",
     "ethers": "^5.5.3",
     "next": "12.0.8",
     "react": "17.0.2",
